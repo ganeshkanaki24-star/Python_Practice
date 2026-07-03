@@ -88,3 +88,11 @@ def xyz(str):
     return count
 print(xyz("I am the gAnesh python prOgrammer"))
 
+# palindrom 
+def xyz(s):
+    if s == s[::-1]:
+        print("its palindrom")
+    else:
+        print("its not palindrom")
+print(xyz("nayan"))
+
