@@ -52,3 +52,7 @@ def login():
     print("Login Successfully")
 login()
 
+# Acustomer should be loddeg before checkinf ther account balance 
+# Create Decorator that check wheter is_logged_in =  true.
+#if yes, execute check_balance().
+#otherwise print "please login first"
