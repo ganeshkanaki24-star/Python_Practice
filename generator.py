@@ -20,3 +20,4 @@ for value in fact_gen:
     print(value)
 
 
+# prime number using generator 
