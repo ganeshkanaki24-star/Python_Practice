@@ -30,6 +30,12 @@ def cal():
 
 print(cal())
 #convert lower to upper
+def to_upper(greet):
+    def wrapper():
+        result = greet()
+        print(result.upper())
+    return wrapper
+@to_upper
 def greet():
     return "hello developer"
 print(greet())
