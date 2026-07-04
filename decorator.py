@@ -39,3 +39,16 @@ def to_upper(greet):
 def greet():
     return "hello developer"
 print(greet())
+
+# crate the multiplication using decorator
+def welcome(login):
+    def wrapper():
+        print("Please Login Frist")
+        login()
+        print("Welcome to Dashboard")
+    return wrapper
+@welcome
+def login():
+    print("Login Successfully")
+login()
+
