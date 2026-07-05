@@ -42,3 +42,34 @@ arr = [1,2,3,4,5,6,7,8,9]
 target = 9
 print(binary_search(arr, target))
            
+# sorting 
+
+arr = [7,3,5,2,1,8]
+
+for i in range(len(arr)):
+    for j in range(len(arr)-i-1):
+        if arr[j] > arr[j+1]:
+            arr[j], arr[j+1] = arr[j+1], arr[j]
+
+print("Sorted:", arr)
+
+# dictionary of product prices
+shop_price = {
+    "Shoes": 250,
+    "Shirt": 100,
+    "Cap": 75,
+    "watch": 300,
+    "jeans": 150
+}
+
+# sort products by price using bubble sort
+items = list(shop_price.items())
+
+for i in range(len(items)):
+    for j in range(0, len(items) - i - 1):
+        if items[j][1] > items[j + 1][1]:
+            items[j], items[j + 1] = items[j + 1], items[j]
+
+sorted_shop_price = dict(items)
+print(sorted_shop_price)
+
