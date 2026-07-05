@@ -52,7 +52,17 @@ def login():
     print("Login Successfully")
 login()
 
-# Acustomer should be loddeg before checkinf ther account balance 
-# Create Decorator that check wheter is_logged_in =  true.
-#if yes, execute check_balance().
-#otherwise print "please login first"
+
+
+def login_required(func):
+    def wrapper(user):
+        if not user.get("is_logged_in"):
+            print("Access Denied! Please Log in.")
+            return None
+        return func(user)
+    return wrapper
+@login_required
+def dashboard(user):
+    print("Welcome " + user["name"] + " to your dashboard!")
+user = {"name": "Ganesh", "is_logged_in": True}
+user2 = {"name": "Guest", "is_logged_in": False}

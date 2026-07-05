@@ -46,7 +46,7 @@ elif traffic_light == "green":
     print("Go.")
 else:
     print("Invalid traffic light color.")
-'''
+
 # atm amont withdrawl
 balance = 5000
 withdrawal_amount = int(input("Enter the amount to withdraw: "))
@@ -57,3 +57,10 @@ elif withdrawal_amount % 100 != 0:
 else:
     balance = balance - withdrawal_amount
     print("Withdrawal successful. Remaining balance:", balance)
+'''
+a = [1,2,3,4]
+b = [3,4,5]
+for i in a:
+    if i in b:
+        print(i)
+    

@@ -96,3 +96,6 @@ def xyz(s):
         print("its not palindrom")
 print(xyz("nayan"))
 
+# reverse the string without using in build function 
+name = "Ganesh"
+
