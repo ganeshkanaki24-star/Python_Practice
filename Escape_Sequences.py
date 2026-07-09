@@ -4,3 +4,6 @@ print("Your a Good Boy \n if your Girl Your Good Girl")
 print("The comments is only for remember, you that code it cannot show in output")
 
 print("I am Ganesh And i am \"Greate Student\" \n and i am good boy too")
+
+print("Hey", 6, 7, sep="~", end="024\n")
+print("Ganesh")
