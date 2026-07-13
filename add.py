@@ -7,10 +7,8 @@ print("The Substraction:", a - b)
 print("The Multiplication:", a * b)
 print("the Division:", a/b)
 '''
-
+'''
 # Factorial
-
-# Factorial of 9
 
 num = int(input("Enter any Number: "))
 factorial = 1
@@ -19,3 +17,14 @@ for i in range(1, num + 1):
     factorial = factorial * i
 
 print(f"Factorial of {num} is {factorial}")
+
+'''
+
+# Factorial from 1 to 9 
+
+for n in range(1, 10):
+    factorial = 1
+
+    for i in range(1, n+1):
+        factorial = factorial * i
+    print(f"Factorial of {n} = {factorial}")
