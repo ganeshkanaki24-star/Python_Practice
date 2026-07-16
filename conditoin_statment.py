@@ -58,9 +58,16 @@ else:
     balance = balance - withdrawal_amount
     print("Withdrawal successful. Remaining balance:", balance)
 '''
+'''
 a = [1,2,3,4]
 b = [3,4,5]
 for i in a:
     if i in b:
         print(i)
-    
+'''
+
+num = [10,20,30,40,50,60,70]
+sum = 0
+for i in num:
+    sum = sum + i
+    print(sum)
