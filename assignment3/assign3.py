@@ -560,16 +560,29 @@
 #     print("Error: File not found!")
 
 # 39 Create a random password generator using the random and string modules.
-import random
-import string
+# import random
+# import string
 
-length = int(input("Enter password length: "))
+# length = int(input("Enter password length: "))
 
-characters = string.ascii_letters + string.digits + string.punctuation
+# characters = string.ascii_letters + string.digits + string.punctuation
 
-password = ""
+# password = ""
 
-for i in range(length):
-    password += random.choice(characters)
+# for i in range(length):
+#     password += random.choice(characters)
 
-print("Generated Password:", password)
+# print("Generated Password:", password)
+
+# 40 Use the datetime module to calculate the number of days between two dates.
+from datetime import datetime
+
+date1 = input("Enter first date (DD-MM-YYYY): ")
+date2 = input("Enter second date (DD-MM-YYYY): ")
+
+d1 = datetime.strptime(date1, "%d-%m-%Y")
+d2 = datetime.strptime(date2, "%d-%m-%Y")
+
+difference = abs((d2 - d1).days)
+
+print("Total Days:", difference)
