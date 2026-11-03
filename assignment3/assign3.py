@@ -525,14 +525,23 @@
 # file.close()
 
 # 36 Copy only the even-numbered lines from one file to another.
-source = open("source.txt", "r")
-destination = open("even_lines.txt", "w")
+# source = open("source.txt", "r")
+# destination = open("even_lines.txt", "w")
 
-for line_number, line in enumerate(source, start=1):
-    if line_number % 2 == 0:
-        destination.write(line)
+# for line_number, line in enumerate(source, start=1):
+#     if line_number % 2 == 0:
+#         destination.write(line)
 
-source.close()
-destination.close()
+# source.close()
+# destination.close()
 
-print("Even numbered lines copied successfully!")
+# print("Even numbered lines copied successfully!")
+
+# 37 Handle invalid integer input using try-except.
+try:
+    num = int(input("Enter a number: "))
+
+    print("Your number is:", num)
+
+except ValueError:
+    print("Invalid input! Please enter an integer.")
