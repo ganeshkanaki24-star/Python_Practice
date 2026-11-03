@@ -427,13 +427,26 @@
 # print("Odd Numbers:", odd)
 
 # 28 Find the common elements between two lists.
-list1 = [1, 2, 3, 4, 5]
-list2 = [3, 4, 5, 6, 7]
+# list1 = [1, 2, 3, 4, 5]
+# list2 = [3, 4, 5, 6, 7]
 
-common = []
+# common = []
 
-for num in list1:
-    if num in list2 and num not in common:
-        common.append(num)
+# for num in list1:
+#     if num in list2 and num not in common:
+#         common.append(num)
 
-print("Common Elements:", common)
+# print("Common Elements:", common)
+
+# 29 Count the frequency of each element in a tuple.
+numbers = (1, 2, 2, 3, 3, 3, 4, 4)
+
+frequency = {}
+
+for num in numbers:
+    if num in frequency:
+        frequency[num] += 1
+    else:
+        frequency[num] = 1
+
+print(frequency)
