@@ -224,18 +224,36 @@
 #     b = c
 
 # 16 Check whether a number is an Armstrong number.
+# num = int(input("Enter a number: "))
+
+# temp = num
+# digits = len(str(num))
+# total = 0
+
+# while temp > 0:
+#     digit = temp % 10
+#     total += digit ** digits
+#     temp //= 10
+
+# if total == num:
+#     print("Armstrong Number")
+# else:
+#     print("Not an Armstrong Number")
+
+# 17 Reverse a number and check if it is a palindrome.
 num = int(input("Enter a number: "))
 
-temp = num
-digits = len(str(num))
-total = 0
+original = num
+reverse = 0
 
-while temp > 0:
-    digit = temp % 10
-    total += digit ** digits
-    temp //= 10
+while num > 0:
+    digit = num % 10
+    reverse = reverse * 10 + digit
+    num //= 10
 
-if total == num:
-    print("Armstrong Number")
+print("Reverse:", reverse)
+
+if original == reverse:
+    print("Palindrome Number")
 else:
-    print("Not an Armstrong Number")
+    print("Not a Palindrome")
