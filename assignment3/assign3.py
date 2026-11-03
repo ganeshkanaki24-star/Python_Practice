@@ -401,13 +401,27 @@
 #     print("Second Largest:", second_largest)
 
 # 26 Rotate a list to the left by k positions.
-numbers = [1, 2, 3, 4, 5]
+# numbers = [1, 2, 3, 4, 5]
 
-k = int(input("Enter rotation: "))
+# k = int(input("Enter rotation: "))
 
-k = k % len(numbers)
+# k = k % len(numbers)
 
-result = numbers[k:] + numbers[:k]
+# result = numbers[k:] + numbers[:k]
 
-print("Rotated List:", result)
+# print("Rotated List:", result)
 
+# 27 Separate even and odd numbers into two lists.
+numbers = [1, 2, 3, 4, 5, 6, 7, 8]
+
+even = []
+odd = []
+
+for num in numbers:
+    if num % 2 == 0:
+        even.append(num)
+    else:
+        odd.append(num)
+
+print("Even Numbers:", even)
+print("Odd Numbers:", odd)
