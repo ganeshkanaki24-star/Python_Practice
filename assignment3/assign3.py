@@ -46,9 +46,24 @@
 
 # 6 Find whether a number is divisible by both 4 and 6 using logical operators.
 
-num = int(input("Enter a number: "))
+# num = int(input("Enter a number: "))
 
-if num % 4 == 0 and num % 6 == 0:
-    print("Divisible by both 4 and 6")
+# if num % 4 == 0 and num % 6 == 0:
+#     print("Divisible by both 4 and 6")
+# else:
+#     print("Not divisible by both")
+
+# 7 Calculate the total electricity bill using different unit rates.
+
+units = int(input("Enter electricity units: "))
+
+if units <= 100:
+    bill = units * 2
+
+elif units <= 200:
+    bill = (100 * 2) + (units - 100) * 3
+
 else:
-    print("Not divisible by both")
+    bill = (100 * 2) + (100 * 3) + (units - 200) * 5
+
+print("Total Electricity Bill: Rs.", bill)
