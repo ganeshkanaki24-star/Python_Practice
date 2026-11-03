@@ -268,12 +268,30 @@
 # print("GCD:", abs(a))
 
 # 19 Write a function to check if a string is a palindrome.
-def palindrome(text):
-    if text == text[::-1]:
-        return True
-    else:
-        return False
+# def palindrome(text):
+#     if text == text[::-1]:
+#         return True
+#     else:
+#         return False
 
-word = input("Enter a word: ")
+# word = input("Enter a word: ")
 
-print(palindrome(word))
+# print(palindrome(word))
+
+# 20 Write a function to count vowels and consonants in a string.
+def count_letters(text):
+    vowels = 0
+    consonants = 0
+
+    for ch in text.lower():
+        if ch in "aeiou":
+            vowels += 1
+        elif ch.isalpha():
+            consonants += 1
+
+    print("Vowels:", vowels)
+    print("Consonants:", consonants)
+
+text = input("Enter a string: ")
+
+count_letters(text)
