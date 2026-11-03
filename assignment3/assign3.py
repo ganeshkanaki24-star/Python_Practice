@@ -452,11 +452,20 @@
 # print(frequency)
 
 # 30 Find the union, intersection, and difference of two sets.
-a = {1, 2, 3, 4}
-b = {3, 4, 5, 6}
+# a = {1, 2, 3, 4}
+# b = {3, 4, 5, 6}
 
-print("Union:", a.union(b))
+# print("Union:", a.union(b))
 
-print("Intersection:", a.intersection(b))
+# print("Intersection:", a.intersection(b))
 
-print("Difference:", a.difference(b))
+# print("Difference:", a.difference(b))
+
+# 31 Check whether one set is a subset of another.
+a = {1, 2, 3}
+b = {1, 2, 3, 4, 5}
+
+if a.issubset(b):
+    print("A is a subset of B")
+else:
+    print("A is not a subset of B")
