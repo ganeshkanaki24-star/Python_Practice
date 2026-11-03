@@ -79,20 +79,77 @@
 #     print("Not a Valid Triangle")
 
 # 9 Determine the type of triangle (Equilateral, Isosceles, Scalene).
-a = int(input("Enter first side: "))
-b = int(input("Enter second side: "))
-c = int(input("Enter third side: "))
+# a = int(input("Enter first side: "))
+# b = int(input("Enter second side: "))
+# c = int(input("Enter third side: "))
 
-if a + b > c and a + c > b and b + c > a:
+# if a + b > c and a + c > b and b + c > a:
 
-    if a == b == c:
-        print("Equilateral Triangle")
+#     if a == b == c:
+#         print("Equilateral Triangle")
 
-    elif a == b or b == c or a == c:
-        print("Isosceles Triangle")
+#     elif a == b or b == c or a == c:
+#         print("Isosceles Triangle")
 
-    else:
-        print("Scalene Triangle")
+#     else:
+#         print("Scalene Triangle")
+
+# else:
+#     print("Invalid Triangle")
+
+# 10 Create a simple ATM menu (Withdraw, Deposit, Balance).
+
+# balance = 5000
+
+# while True:
+#     print("\n1. Withdraw")
+#     print("2. Deposit")
+#     print("3. Balance")
+#     print("4. Exit")
+
+#     choice = int(input("Enter your choice: "))
+
+#     if choice == 1:
+#         amount = int(input("Enter withdrawal amount: "))
+
+#         if amount > 0 and amount <= balance:
+#             balance -= amount
+#             print("Withdrawal successful")
+#         else:
+#             print("Insufficient balance or invalid amount")
+
+#     elif choice == 2:
+#         amount = int(input("Enter deposit amount: "))
+
+#         if amount > 0:
+#             balance += amount
+#             print("Deposit successful")
+#         else:
+#             print("Invalid amount")
+
+#     elif choice == 3:
+#         print("Available Balance:", balance)
+
+#     elif choice == 4:
+#         print("Thank you for using ATM")
+#         break
+
+#     else:
+#         print("Invalid choice")
+
+# 11 Calculate income tax based on different tax slabs.
+income = int(input("Enter your annual income: "))
+
+if income <= 250000:
+    tax = 0
+
+elif income <= 500000:
+    tax = (income - 250000) * 0.05
+
+elif income <= 1000000:
+    tax = (250000 * 0.05) + (income - 500000) * 0.20
 
 else:
-    print("Invalid Triangle")
+    tax = (250000 * 0.05) + (500000 * 0.20) + (income - 1000000) * 0.30
+
+print("Income Tax:", tax)
