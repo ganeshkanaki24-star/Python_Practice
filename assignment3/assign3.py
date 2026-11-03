@@ -508,3 +508,18 @@
 # result = dict(sorted(marks.items(), key=lambda item: item[1]))
 
 # print(result)
+
+# 35 Read a text file and count the number of lines, words, and characters.
+file = open("sample.txt", "r")
+
+content = file.read()
+
+lines = content.splitlines()
+words = content.split()
+characters = len(content)
+
+print("Total Lines:", len(lines))
+print("Total Words:", len(words))
+print("Total Characters:", characters)
+
+file.close()
