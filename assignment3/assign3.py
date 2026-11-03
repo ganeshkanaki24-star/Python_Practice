@@ -412,16 +412,28 @@
 # print("Rotated List:", result)
 
 # 27 Separate even and odd numbers into two lists.
-numbers = [1, 2, 3, 4, 5, 6, 7, 8]
+# numbers = [1, 2, 3, 4, 5, 6, 7, 8]
 
-even = []
-odd = []
+# even = []
+# odd = []
 
-for num in numbers:
-    if num % 2 == 0:
-        even.append(num)
-    else:
-        odd.append(num)
+# for num in numbers:
+#     if num % 2 == 0:
+#         even.append(num)
+#     else:
+#         odd.append(num)
 
-print("Even Numbers:", even)
-print("Odd Numbers:", odd)
+# print("Even Numbers:", even)
+# print("Odd Numbers:", odd)
+
+# 28 Find the common elements between two lists.
+list1 = [1, 2, 3, 4, 5]
+list2 = [3, 4, 5, 6, 7]
+
+common = []
+
+for num in list1:
+    if num in list2 and num not in common:
+        common.append(num)
+
+print("Common Elements:", common)
