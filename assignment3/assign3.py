@@ -259,10 +259,21 @@
 #     print("Not a Palindrome")
 
 # 18 Find the Greatest Common Divisor (GCD) of two numbers.
-a = int(input("Enter first number: "))
-b = int(input("Enter second number: "))
+# a = int(input("Enter first number: "))
+# b = int(input("Enter second number: "))
 
-while b != 0:
-    a, b = b, a % b
+# while b != 0:
+#     a, b = b, a % b
 
-print("GCD:", abs(a))
+# print("GCD:", abs(a))
+
+# 19 Write a function to check if a string is a palindrome.
+def palindrome(text):
+    if text == text[::-1]:
+        return True
+    else:
+        return False
+
+word = input("Enter a word: ")
+
+print(palindrome(word))
