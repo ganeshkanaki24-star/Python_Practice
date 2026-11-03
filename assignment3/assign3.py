@@ -462,10 +462,25 @@
 # print("Difference:", a.difference(b))
 
 # 31 Check whether one set is a subset of another.
-a = {1, 2, 3}
-b = {1, 2, 3, 4, 5}
+# a = {1, 2, 3}
+# b = {1, 2, 3, 4, 5}
 
-if a.issubset(b):
-    print("A is a subset of B")
-else:
-    print("A is not a subset of B")
+# if a.issubset(b):
+#     print("A is a subset of B")
+# else:
+#     print("A is not a subset of B")
+
+# 32 Count the frequency of words in a sentence.
+sentence = input("Enter a sentence: ")
+
+words = sentence.lower().split()
+
+frequency = {}
+
+for word in words:
+    if word in frequency:
+        frequency[word] += 1
+    else:
+        frequency[word] = 1
+
+print("Word Frequency:", frequency)
