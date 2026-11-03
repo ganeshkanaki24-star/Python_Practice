@@ -297,17 +297,35 @@
 # count_letters(text)
 
 # 21 Create a function to calculate simple and compound interest.
-def calculate_interest(p, r, t):
-    simple = (p * r * t) / 100
+# def calculate_interest(p, r, t):
+#     simple = (p * r * t) / 100
 
-    compound = p * (1 + r / 100) ** t - p
+#     compound = p * (1 + r / 100) ** t - p
 
-    print("Simple Interest:", simple)
-    print("Compound Interest:", round(compound, 2))
+#     print("Simple Interest:", simple)
+#     print("Compound Interest:", round(compound, 2))
 
 
-p = float(input("Enter principal amount: "))
-r = float(input("Enter rate: "))
-t = float(input("Enter time in years: "))
+# p = float(input("Enter principal amount: "))
+# r = float(input("Enter rate: "))
+# t = float(input("Enter time in years: "))
 
-calculate_interest(p, r, t)
+# calculate_interest(p, r, t)
+
+# 22 Write a function to return all factors of a number.
+def find_factors(n):
+    factors = []
+
+    for i in range(1, n + 1):
+        if n % i == 0:
+            factors.append(i)
+
+    return factors
+
+
+num = int(input("Enter a number: "))
+
+if num > 0:
+    print("Factors:", find_factors(num))
+else:
+    print("Enter a positive number")
