@@ -69,11 +69,30 @@
 # print("Total Electricity Bill: Rs.", bill)
 
 # 8 Check whether three sides can form a triangle.
+# a = int(input("Enter first side: "))
+# b = int(input("Enter second side: "))
+# c = int(input("Enter third side: "))
+
+# if a + b > c and a + c > b and b + c > a:
+#     print("Valid Triangle")
+# else:
+#     print("Not a Valid Triangle")
+
+# 9 Determine the type of triangle (Equilateral, Isosceles, Scalene).
 a = int(input("Enter first side: "))
 b = int(input("Enter second side: "))
 c = int(input("Enter third side: "))
 
 if a + b > c and a + c > b and b + c > a:
-    print("Valid Triangle")
+
+    if a == b == c:
+        print("Equilateral Triangle")
+
+    elif a == b or b == c or a == c:
+        print("Isosceles Triangle")
+
+    else:
+        print("Scalene Triangle")
+
 else:
-    print("Not a Valid Triangle")
+    print("Invalid Triangle")
