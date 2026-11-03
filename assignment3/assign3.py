@@ -34,12 +34,21 @@
 #     print("Not a power of 2")
 
 # 5 Swap two numbers using bitwise XOR.
-a = 10
-b = 20
+# a = 10
+# b = 20
 
-a = a ^ b
-b = a ^ b
-a = a ^ b
+# a = a ^ b
+# b = a ^ b
+# a = a ^ b
 
-print("A =", a)
-print("B =", b)
+# print("A =", a)
+# print("B =", b)
+
+# 6 Find whether a number is divisible by both 4 and 6 using logical operators.
+
+num = int(input("Enter a number: "))
+
+if num % 4 == 0 and num % 6 == 0:
+    print("Divisible by both 4 and 6")
+else:
+    print("Not divisible by both")
