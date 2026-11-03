@@ -538,10 +538,23 @@
 # print("Even numbered lines copied successfully!")
 
 # 37 Handle invalid integer input using try-except.
+# try:
+#     num = int(input("Enter a number: "))
+
+#     print("Your number is:", num)
+
+# except ValueError:
+#     print("Invalid input! Please enter an integer.")
+
+# 38 Handle file-not-found errors while reading a file.
 try:
-    num = int(input("Enter a number: "))
+    file = open("student.txt", "r")
 
-    print("Your number is:", num)
+    content = file.read()
 
-except ValueError:
-    print("Invalid input! Please enter an integer.")
+    print(content)
+
+    file.close()
+
+except FileNotFoundError:
+    print("Error: File not found!")
