@@ -184,15 +184,28 @@
 #     print("Invalid choice")
 
 # 13 Print all prime numbers between 1 and n.
+# n = int(input("Enter a number: "))
+
+# for num in range(2, n + 1):
+#     prime = True
+
+#     for i in range(2, num):
+#         if num % i == 0:
+#             prime = False
+#             break
+
+#     if prime:
+#         print(num, end=" ")
+
+# 14 Find the factorial of a number using a loop.
 n = int(input("Enter a number: "))
 
-for num in range(2, n + 1):
-    prime = True
+fact = 1
 
-    for i in range(2, num):
-        if num % i == 0:
-            prime = False
-            break
+if n < 0:
+    print("Factorial is not defined for negative numbers")
+else:
+    for i in range(1, n + 1):
+        fact = fact * i
 
-    if prime:
-        print(num, end=" ")
+    print("Factorial:", fact)
