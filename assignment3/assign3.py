@@ -471,16 +471,28 @@
 #     print("A is not a subset of B")
 
 # 32 Count the frequency of words in a sentence.
-sentence = input("Enter a sentence: ")
+# sentence = input("Enter a sentence: ")
 
-words = sentence.lower().split()
+# words = sentence.lower().split()
 
-frequency = {}
+# frequency = {}
 
-for word in words:
-    if word in frequency:
-        frequency[word] += 1
-    else:
-        frequency[word] = 1
+# for word in words:
+#     if word in frequency:
+#         frequency[word] += 1
+#     else:
+#         frequency[word] = 1
 
-print("Word Frequency:", frequency)
+# print("Word Frequency:", frequency)
+
+# 33 Create a dictionary from two lists (keys and values).
+keys = ["Name", "Age", "Course"]
+
+values = ["Ganesh", 21, "MCA"]
+
+student = {}
+
+for i in range(len(keys)):
+    student[keys[i]] = values[i]
+
+print(student)
