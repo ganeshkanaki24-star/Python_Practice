@@ -198,14 +198,27 @@
 #         print(num, end=" ")
 
 # 14 Find the factorial of a number using a loop.
-n = int(input("Enter a number: "))
+# n = int(input("Enter a number: "))
 
-fact = 1
+# fact = 1
 
-if n < 0:
-    print("Factorial is not defined for negative numbers")
-else:
-    for i in range(1, n + 1):
-        fact = fact * i
+# if n < 0:
+#     print("Factorial is not defined for negative numbers")
+# else:
+#     for i in range(1, n + 1):
+#         fact = fact * i
 
-    print("Factorial:", fact)
+#     print("Factorial:", fact)
+
+# 15 Print the Fibonacci series up to n terms.
+n = int(input("Enter number of terms: "))
+
+a = 0
+b = 1
+
+for i in range(n):
+    print(a, end=" ")
+
+    c = a + b
+    a = b
+    b = c
