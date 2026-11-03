@@ -155,30 +155,44 @@
 # print("Income Tax:", tax)
 
 # 12 Create a menu-driven calculator using if-elif.
-a = float(input("Enter first number: "))
-b = float(input("Enter second number: "))
+# a = float(input("Enter first number: "))
+# b = float(input("Enter second number: "))
 
-print("1. Addition")
-print("2. Subtraction")
-print("3. Multiplication")
-print("4. Division")
+# print("1. Addition")
+# print("2. Subtraction")
+# print("3. Multiplication")
+# print("4. Division")
 
-choice = int(input("Enter your choice: "))
+# choice = int(input("Enter your choice: "))
 
-if choice == 1:
-    print("Result:", a + b)
+# if choice == 1:
+#     print("Result:", a + b)
 
-elif choice == 2:
-    print("Result:", a - b)
+# elif choice == 2:
+#     print("Result:", a - b)
 
-elif choice == 3:
-    print("Result:", a * b)
+# elif choice == 3:
+#     print("Result:", a * b)
 
-elif choice == 4:
-    if b != 0:
-        print("Result:", a / b)
-    else:
-        print("Cannot divide by zero")
+# elif choice == 4:
+#     if b != 0:
+#         print("Result:", a / b)
+#     else:
+#         print("Cannot divide by zero")
 
-else:
-    print("Invalid choice")
+# else:
+#     print("Invalid choice")
+
+# 13 Print all prime numbers between 1 and n.
+n = int(input("Enter a number: "))
+
+for num in range(2, n + 1):
+    prime = True
+
+    for i in range(2, num):
+        if num % i == 0:
+            prime = False
+            break
+
+    if prime:
+        print(num, end=" ")
