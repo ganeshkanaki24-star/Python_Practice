@@ -486,13 +486,25 @@
 # print("Word Frequency:", frequency)
 
 # 33 Create a dictionary from two lists (keys and values).
-keys = ["Name", "Age", "Course"]
+# keys = ["Name", "Age", "Course"]
 
-values = ["Ganesh", 21, "MCA"]
+# values = ["Ganesh", 21, "MCA"]
 
-student = {}
+# student = {}
 
-for i in range(len(keys)):
-    student[keys[i]] = values[i]
+# for i in range(len(keys)):
+#     student[keys[i]] = values[i]
 
-print(student)
+# print(student)
+
+# 34 Sort a dictionary by its values.
+# marks = {
+#     "Ganesh": 85,
+#     "Rahul": 75,
+#     "Amit": 90,
+#     "Sneha": 80
+# }
+
+# result = dict(sorted(marks.items(), key=lambda item: item[1]))
+
+# print(result)
