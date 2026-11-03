@@ -439,14 +439,24 @@
 # print("Common Elements:", common)
 
 # 29 Count the frequency of each element in a tuple.
-numbers = (1, 2, 2, 3, 3, 3, 4, 4)
+# numbers = (1, 2, 2, 3, 3, 3, 4, 4)
 
-frequency = {}
+# frequency = {}
 
-for num in numbers:
-    if num in frequency:
-        frequency[num] += 1
-    else:
-        frequency[num] = 1
+# for num in numbers:
+#     if num in frequency:
+#         frequency[num] += 1
+#     else:
+#         frequency[num] = 1
 
-print(frequency)
+# print(frequency)
+
+# 30 Find the union, intersection, and difference of two sets.
+a = {1, 2, 3, 4}
+b = {3, 4, 5, 6}
+
+print("Union:", a.union(b))
+
+print("Intersection:", a.intersection(b))
+
+print("Difference:", a.difference(b))
