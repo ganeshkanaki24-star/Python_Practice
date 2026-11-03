@@ -575,14 +575,14 @@
 # print("Generated Password:", password)
 
 # 40 Use the datetime module to calculate the number of days between two dates.
-from datetime import datetime
+# from datetime import datetime
 
-date1 = input("Enter first date (DD-MM-YYYY): ")
-date2 = input("Enter second date (DD-MM-YYYY): ")
+# date1 = input("Enter first date (DD-MM-YYYY): ")
+# date2 = input("Enter second date (DD-MM-YYYY): ")
 
-d1 = datetime.strptime(date1, "%d-%m-%Y")
-d2 = datetime.strptime(date2, "%d-%m-%Y")
+# d1 = datetime.strptime(date1, "%d-%m-%Y")
+# d2 = datetime.strptime(date2, "%d-%m-%Y")
 
-difference = abs((d2 - d1).days)
+# difference = abs((d2 - d1).days)
 
-print("Total Days:", difference)
+# print("Total Days:", difference)
