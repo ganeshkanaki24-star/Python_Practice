@@ -313,19 +313,43 @@
 # calculate_interest(p, r, t)
 
 # 22 Write a function to return all factors of a number.
-def find_factors(n):
-    factors = []
+# def find_factors(n):
+#     factors = []
 
-    for i in range(1, n + 1):
-        if n % i == 0:
-            factors.append(i)
+#     for i in range(1, n + 1):
+#         if n % i == 0:
+#             factors.append(i)
 
-    return factors
+#     return factors
 
 
-num = int(input("Enter a number: "))
+# num = int(input("Enter a number: "))
 
-if num > 0:
-    print("Factors:", find_factors(num))
-else:
-    print("Enter a positive number")
+# if num > 0:
+#     print("Factors:", find_factors(num))
+# else:
+#     print("Enter a positive number")
+
+# 23 Write a function to find the second-largest number in a list.
+
+def second_largest(numbers):
+    largest = float('-inf')
+    second = float('-inf')
+
+    for num in numbers:
+        if num > largest:
+            second = largest
+            largest = num
+
+        elif num > second and num != largest:
+            second = num
+
+    if second == float('-inf'):
+        return None
+
+    return second
+
+
+numbers = [10, 20, 40, 30, 50]
+
+print("Second Largest:", second_largest(numbers))
