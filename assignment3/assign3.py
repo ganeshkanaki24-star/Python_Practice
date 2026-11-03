@@ -15,12 +15,20 @@
 
 # 3 Remove all duplicate values from a mixed list while preserving the original order.
 
-data = [10, "hello", 20, "hello", 10, 30, "python"]
+# data = [10, "hello", 20, "hello", 10, 30, "python"]
 
-result = []
+# result = []
 
-for item in data:
-    if item not in result:
-        result.append(item)
+# for item in data:
+#     if item not in result:
+#         result.append(item)
 
-print(result)
+# print(result)
+
+# 4 Check whether a number is a power of 2 using operators.
+num = int(input("Enter a number: "))
+
+if num > 0 and (num & (num - 1)) == 0:
+    print("Power of 2")
+else:
+    print("Not a power of 2")
