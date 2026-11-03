@@ -510,16 +510,29 @@
 # print(result)
 
 # 35 Read a text file and count the number of lines, words, and characters.
-file = open("sample.txt", "r")
+# file = open("sample.txt", "r")
 
-content = file.read()
+# content = file.read()
 
-lines = content.splitlines()
-words = content.split()
-characters = len(content)
+# lines = content.splitlines()
+# words = content.split()
+# characters = len(content)
 
-print("Total Lines:", len(lines))
-print("Total Words:", len(words))
-print("Total Characters:", characters)
+# print("Total Lines:", len(lines))
+# print("Total Words:", len(words))
+# print("Total Characters:", characters)
 
-file.close()
+# file.close()
+
+# 36 Copy only the even-numbered lines from one file to another.
+source = open("source.txt", "r")
+destination = open("even_lines.txt", "w")
+
+for line_number, line in enumerate(source, start=1):
+    if line_number % 2 == 0:
+        destination.write(line)
+
+source.close()
+destination.close()
+
+print("Even numbered lines copied successfully!")
