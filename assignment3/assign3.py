@@ -26,9 +26,20 @@
 # print(result)
 
 # 4 Check whether a number is a power of 2 using operators.
-num = int(input("Enter a number: "))
+# num = int(input("Enter a number: "))
 
-if num > 0 and (num & (num - 1)) == 0:
-    print("Power of 2")
-else:
-    print("Not a power of 2")
+# if num > 0 and (num & (num - 1)) == 0:
+#     print("Power of 2")
+# else:
+#     print("Not a power of 2")
+
+# 5 Swap two numbers using bitwise XOR.
+a = 10
+b = 20
+
+a = a ^ b
+b = a ^ b
+a = a ^ b
+
+print("A =", a)
+print("B =", b)
