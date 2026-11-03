@@ -241,19 +241,28 @@
 #     print("Not an Armstrong Number")
 
 # 17 Reverse a number and check if it is a palindrome.
-num = int(input("Enter a number: "))
+# num = int(input("Enter a number: "))
 
-original = num
-reverse = 0
+# original = num
+# reverse = 0
 
-while num > 0:
-    digit = num % 10
-    reverse = reverse * 10 + digit
-    num //= 10
+# while num > 0:
+#     digit = num % 10
+#     reverse = reverse * 10 + digit
+#     num //= 10
 
-print("Reverse:", reverse)
+# print("Reverse:", reverse)
 
-if original == reverse:
-    print("Palindrome Number")
-else:
-    print("Not a Palindrome")
+# if original == reverse:
+#     print("Palindrome Number")
+# else:
+#     print("Not a Palindrome")
+
+# 18 Find the Greatest Common Divisor (GCD) of two numbers.
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+
+while b != 0:
+    a, b = b, a % b
+
+print("GCD:", abs(a))
