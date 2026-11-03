@@ -211,14 +211,31 @@
 #     print("Factorial:", fact)
 
 # 15 Print the Fibonacci series up to n terms.
-n = int(input("Enter number of terms: "))
+# n = int(input("Enter number of terms: "))
 
-a = 0
-b = 1
+# a = 0
+# b = 1
 
-for i in range(n):
-    print(a, end=" ")
+# for i in range(n):
+#     print(a, end=" ")
 
-    c = a + b
-    a = b
-    b = c
+#     c = a + b
+#     a = b
+#     b = c
+
+# 16 Check whether a number is an Armstrong number.
+num = int(input("Enter a number: "))
+
+temp = num
+digits = len(str(num))
+total = 0
+
+while temp > 0:
+    digit = temp % 10
+    total += digit ** digits
+    temp //= 10
+
+if total == num:
+    print("Armstrong Number")
+else:
+    print("Not an Armstrong Number")
