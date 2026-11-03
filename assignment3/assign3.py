@@ -55,15 +55,25 @@
 
 # 7 Calculate the total electricity bill using different unit rates.
 
-units = int(input("Enter electricity units: "))
+# units = int(input("Enter electricity units: "))
 
-if units <= 100:
-    bill = units * 2
+# if units <= 100:
+#     bill = units * 2
 
-elif units <= 200:
-    bill = (100 * 2) + (units - 100) * 3
+# elif units <= 200:
+#     bill = (100 * 2) + (units - 100) * 3
 
+# else:
+#     bill = (100 * 2) + (100 * 3) + (units - 200) * 5
+
+# print("Total Electricity Bill: Rs.", bill)
+
+# 8 Check whether three sides can form a triangle.
+a = int(input("Enter first side: "))
+b = int(input("Enter second side: "))
+c = int(input("Enter third side: "))
+
+if a + b > c and a + c > b and b + c > a:
+    print("Valid Triangle")
 else:
-    bill = (100 * 2) + (100 * 3) + (units - 200) * 5
-
-print("Total Electricity Bill: Rs.", bill)
+    print("Not a Valid Triangle")
