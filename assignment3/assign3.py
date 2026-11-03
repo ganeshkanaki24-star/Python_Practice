@@ -138,18 +138,47 @@
 #         print("Invalid choice")
 
 # 11 Calculate income tax based on different tax slabs.
-income = int(input("Enter your annual income: "))
+# income = int(input("Enter your annual income: "))
 
-if income <= 250000:
-    tax = 0
+# if income <= 250000:
+#     tax = 0
 
-elif income <= 500000:
-    tax = (income - 250000) * 0.05
+# elif income <= 500000:
+#     tax = (income - 250000) * 0.05
 
-elif income <= 1000000:
-    tax = (250000 * 0.05) + (income - 500000) * 0.20
+# elif income <= 1000000:
+#     tax = (250000 * 0.05) + (income - 500000) * 0.20
+
+# else:
+#     tax = (250000 * 0.05) + (500000 * 0.20) + (income - 1000000) * 0.30
+
+# print("Income Tax:", tax)
+
+# 12 Create a menu-driven calculator using if-elif.
+a = float(input("Enter first number: "))
+b = float(input("Enter second number: "))
+
+print("1. Addition")
+print("2. Subtraction")
+print("3. Multiplication")
+print("4. Division")
+
+choice = int(input("Enter your choice: "))
+
+if choice == 1:
+    print("Result:", a + b)
+
+elif choice == 2:
+    print("Result:", a - b)
+
+elif choice == 3:
+    print("Result:", a * b)
+
+elif choice == 4:
+    if b != 0:
+        print("Result:", a / b)
+    else:
+        print("Cannot divide by zero")
 
 else:
-    tax = (250000 * 0.05) + (500000 * 0.20) + (income - 1000000) * 0.30
-
-print("Income Tax:", tax)
+    print("Invalid choice")
