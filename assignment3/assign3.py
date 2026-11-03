@@ -367,35 +367,47 @@
 # print("Merged List:", result)
 
 # 25 Find the second-largest and second-smallest elements.
-numbers = [10, 20, 5, 40, 30]
+# numbers = [10, 20, 5, 40, 30]
 
-unique = []
+# unique = []
 
-for num in numbers:
-    if num not in unique:
-        unique.append(num)
+# for num in numbers:
+#     if num not in unique:
+#         unique.append(num)
 
-if len(unique) < 2:
-    print("Not enough different elements")
-else:
-    smallest = float('inf')
-    second_smallest = float('inf')
+# if len(unique) < 2:
+#     print("Not enough different elements")
+# else:
+#     smallest = float('inf')
+#     second_smallest = float('inf')
 
-    largest = float('-inf')
-    second_largest = float('-inf')
+#     largest = float('-inf')
+#     second_largest = float('-inf')
 
-    for num in unique:
-        if num < smallest:
-            second_smallest = smallest
-            smallest = num
-        elif num < second_smallest:
-            second_smallest = num
+#     for num in unique:
+#         if num < smallest:
+#             second_smallest = smallest
+#             smallest = num
+#         elif num < second_smallest:
+#             second_smallest = num
 
-        if num > largest:
-            second_largest = largest
-            largest = num
-        elif num > second_largest:
-            second_largest = num
+#         if num > largest:
+#             second_largest = largest
+#             largest = num
+#         elif num > second_largest:
+#             second_largest = num
 
-    print("Second Smallest:", second_smallest)
-    print("Second Largest:", second_largest)
+#     print("Second Smallest:", second_smallest)
+#     print("Second Largest:", second_largest)
+
+# 26 Rotate a list to the left by k positions.
+numbers = [1, 2, 3, 4, 5]
+
+k = int(input("Enter rotation: "))
+
+k = k % len(numbers)
+
+result = numbers[k:] + numbers[:k]
+
+print("Rotated List:", result)
+
