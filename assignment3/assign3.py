@@ -279,19 +279,35 @@
 # print(palindrome(word))
 
 # 20 Write a function to count vowels and consonants in a string.
-def count_letters(text):
-    vowels = 0
-    consonants = 0
+# def count_letters(text):
+#     vowels = 0
+#     consonants = 0
 
-    for ch in text.lower():
-        if ch in "aeiou":
-            vowels += 1
-        elif ch.isalpha():
-            consonants += 1
+#     for ch in text.lower():
+#         if ch in "aeiou":
+#             vowels += 1
+#         elif ch.isalpha():
+#             consonants += 1
 
-    print("Vowels:", vowels)
-    print("Consonants:", consonants)
+#     print("Vowels:", vowels)
+#     print("Consonants:", consonants)
 
-text = input("Enter a string: ")
+# text = input("Enter a string: ")
 
-count_letters(text)
+# count_letters(text)
+
+# 21 Create a function to calculate simple and compound interest.
+def calculate_interest(p, r, t):
+    simple = (p * r * t) / 100
+
+    compound = p * (1 + r / 100) ** t - p
+
+    print("Simple Interest:", simple)
+    print("Compound Interest:", round(compound, 2))
+
+
+p = float(input("Enter principal amount: "))
+r = float(input("Enter rate: "))
+t = float(input("Enter time in years: "))
+
+calculate_interest(p, r, t)
