@@ -547,14 +547,29 @@
 #     print("Invalid input! Please enter an integer.")
 
 # 38 Handle file-not-found errors while reading a file.
-try:
-    file = open("student.txt", "r")
+# try:
+#     file = open("student.txt", "r")
 
-    content = file.read()
+#     content = file.read()
 
-    print(content)
+#     print(content)
 
-    file.close()
+#     file.close()
 
-except FileNotFoundError:
-    print("Error: File not found!")
+# except FileNotFoundError:
+#     print("Error: File not found!")
+
+# 39 Create a random password generator using the random and string modules.
+import random
+import string
+
+length = int(input("Enter password length: "))
+
+characters = string.ascii_letters + string.digits + string.punctuation
+
+password = ""
+
+for i in range(length):
+    password += random.choice(characters)
+
+print("Generated Password:", password)
