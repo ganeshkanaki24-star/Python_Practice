@@ -272,17 +272,17 @@
 
 # 19. Write a program that takes a sentence and finds the longest word.
 
-sentence = input("Enter a sentence: ")
+# sentence = input("Enter a sentence: ")
 
-words = sentence.split()
+# words = sentence.split()
 
-longest = ""
+# longest = ""
 
-for word in words:
-    if len(word) > len(longest):
-        longest = word
+# for word in words:
+#     if len(word) > len(longest):
+#         longest = word
 
-print("Longest word:", longest)
+# print("Longest word:", longest)
 
 
 # 20. Create a simple student marks program that:
