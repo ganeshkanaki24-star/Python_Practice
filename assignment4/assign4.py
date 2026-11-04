@@ -1,12 +1,12 @@
 
 # 1. Write a Python program to check whether a number is even or odd.
 
-num = int(input("Enter a number: "))
+# num = int(input("Enter a number: "))
 
-if num % 2 == 0:
-    print("Even Number")
-else:
-    print("Odd Number")
+# if num % 2 == 0:
+#     print("Even Number")
+# else:
+#     print("Odd Number")
 
 
 # 2. Write a program to find the largest of three numbers.
