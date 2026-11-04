@@ -62,17 +62,17 @@
 
 # 5. Write a program to find the factorial of a number using a loop.
 
-num = int(input("Enter a number: "))
+# num = int(input("Enter a number: "))
 
-fact = 1
+# fact = 1
 
-if num < 0:
-    print("Factorial is not possible")
-else:
-    for i in range(1, num + 1):
-        fact = fact * i
+# if num < 0:
+#     print("Factorial is not possible")
+# else:
+#     for i in range(1, num + 1):
+#         fact = fact * i
 
-    print("Factorial:", fact)
+#     print("Factorial:", fact)
 
 
 # 6. Write a program to reverse a string without using [::-1].
