@@ -77,29 +77,29 @@
 
 # 6. Write a program to reverse a string without using [::-1].
 
-text = input("Enter a string: ")
+# text = input("Enter a string: ")
 
-reverse = ""
+# reverse = ""
 
-for ch in text:
-    reverse = ch + reverse
+# for ch in text:
+#     reverse = ch + reverse
 
-print("Reversed string:", reverse)
+# print("Reversed string:", reverse)
 
 
 # 7. Write a program to check whether a string is a palindrome.
 
-text = input("Enter a string: ")
+# text = input("Enter a string: ")
 
-reverse = ""
+# reverse = ""
 
-for ch in text:
-    reverse = ch + reverse
+# for ch in text:
+#     reverse = ch + reverse
 
-if text == reverse:
-    print("Palindrome")
-else:
-    print("Not a Palindrome")
+# if text == reverse:
+#     print("Palindrome")
+# else:
+#     print("Not a Palindrome")
 
 
 # 8. Write a program to count the number of vowels and consonants in a string.
