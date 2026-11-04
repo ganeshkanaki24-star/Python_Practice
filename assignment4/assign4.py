@@ -179,23 +179,23 @@
 
 # 13. Write a program to find the second-largest number in a list.
 
-numbers = [10, 20, 50, 40, 30]
+# numbers = [10, 20, 50, 40, 30]
 
-largest = float('-inf')
-second = float('-inf')
+# largest = float('-inf')
+# second = float('-inf')
 
-for num in numbers:
-    if num > largest:
-        second = largest
-        largest = num
+# for num in numbers:
+#     if num > largest:
+#         second = largest
+#         largest = num
 
-    elif num > second and num != largest:
-        second = num
+#     elif num > second and num != largest:
+#         second = num
 
-if second == float('-inf'):
-    print("Second largest number does not exist")
-else:
-    print("Second largest number:", second)
+# if second == float('-inf'):
+#     print("Second largest number does not exist")
+# else:
+#     print("Second largest number:", second)
 
 
 # 14. Write a program to sort a list without using sort() or sorted().
