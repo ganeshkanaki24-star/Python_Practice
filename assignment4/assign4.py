@@ -223,24 +223,24 @@
 #     return result
 
 
-numbers = [1, 2, 3, 4, 5, 6, 7, 8]
+# numbers = [1, 2, 3, 4, 5, 6, 7, 8]
 
-print("Even numbers:", even_numbers(numbers))
+# print("Even numbers:", even_numbers(numbers))
 
 
 # 16. Write a program to find the frequency of each character in a string.
 
-text = input("Enter a string: ")
+# text = input("Enter a string: ")
 
-frequency = {}
+# frequency = {}
 
-for ch in text:
-    if ch in frequency:
-        frequency[ch] += 1
-    else:
-        frequency[ch] = 1
+# for ch in text:
+#     if ch in frequency:
+#         frequency[ch] += 1
+#     else:
+#         frequency[ch] = 1
 
-print("Character Frequency:", frequency)
+# print("Character Frequency:", frequency)
 
 
 # 17. Write a program to check whether two strings are anagrams of each other.
