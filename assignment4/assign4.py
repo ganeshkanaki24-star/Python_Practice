@@ -290,35 +290,35 @@
 #     2. calculates the total and percentage,
 #     3. assigns a grade, and displays whether the student passed or failed.
 
-marks = []
+# marks = []
 
-for i in range(1, 6):
-    mark = int(input("Enter marks for subject " + str(i) + ": "))
-    marks.append(mark)
+# for i in range(1, 6):
+#     mark = int(input("Enter marks for subject " + str(i) + ": "))
+#     marks.append(mark)
 
-total = sum(marks)
-percentage = total / 5
+# total = sum(marks)
+# percentage = total / 5
 
-print("Total Marks:", total)
-print("Percentage:", percentage)
+# print("Total Marks:", total)
+# print("Percentage:", percentage)
 
-if any(mark < 0 or mark > 100 for mark in marks):
-    print("Invalid Marks")
+# if any(mark < 0 or mark > 100 for mark in marks):
+#     print("Invalid Marks")
 
-elif any(mark < 35 for mark in marks):
-    print("Result: Fail")
-    print("Grade: F")
+# elif any(mark < 35 for mark in marks):
+#     print("Result: Fail")
+#     print("Grade: F")
 
-else:
-    print("Result: Pass")
+# else:
+#     print("Result: Pass")
 
-    if percentage >= 90:
-        print("Grade: A")
-    elif percentage >= 80:
-        print("Grade: B")
-    elif percentage >= 70:
-        print("Grade: C")
-    elif percentage >= 60:
-        print("Grade: D")
-    else:
-        print("Grade: E")
+#     if percentage >= 90:
+#         print("Grade: A")
+#     elif percentage >= 80:
+#         print("Grade: B")
+#     elif percentage >= 70:
+#         print("Grade: C")
+#     elif percentage >= 60:
+#         print("Grade: D")
+#     else:
+#         print("Grade: E")
