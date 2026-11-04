@@ -200,27 +200,27 @@
 
 # 14. Write a program to sort a list without using sort() or sorted().
 
-numbers = [40, 10, 50, 20, 30]
+# numbers = [40, 10, 50, 20, 30]
 
-for i in range(len(numbers)):
-    for j in range(0, len(numbers) - i - 1):
+# for i in range(len(numbers)):
+#     for j in range(0, len(numbers) - i - 1):
 
-        if numbers[j] > numbers[j + 1]:
-            numbers[j], numbers[j + 1] = numbers[j + 1], numbers[j]
+#         if numbers[j] > numbers[j + 1]:
+#             numbers[j], numbers[j + 1] = numbers[j + 1], numbers[j]
 
-print("Sorted list:", numbers)
+# print("Sorted list:", numbers)
 
 
 # 15. Write a function that accepts a list of numbers and returns a list containing only the even numbers.
 
-def even_numbers(numbers):
-    result = []
+# def even_numbers(numbers):
+#     result = []
 
-    for num in numbers:
-        if num % 2 == 0:
-            result.append(num)
+#     for num in numbers:
+#         if num % 2 == 0:
+#             result.append(num)
 
-    return result
+#     return result
 
 
 numbers = [1, 2, 3, 4, 5, 6, 7, 8]
