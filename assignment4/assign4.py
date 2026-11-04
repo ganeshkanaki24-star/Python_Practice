@@ -259,15 +259,15 @@
 
 # 18. Write a program to find all duplicate values in a list.
 
-numbers = [10, 20, 30, 10, 40, 20, 50, 30]
+# numbers = [10, 20, 30, 10, 40, 20, 50, 30]
 
-duplicates = []
+# duplicates = []
 
-for num in numbers:
-    if numbers.count(num) > 1 and num not in duplicates:
-        duplicates.append(num)
+# for num in numbers:
+#     if numbers.count(num) > 1 and num not in duplicates:
+#         duplicates.append(num)
 
-print("Duplicate values:", duplicates)
+# print("Duplicate values:", duplicates)
 
 
 # 19. Write a program that takes a sentence and finds the longest word.
