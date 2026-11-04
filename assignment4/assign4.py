@@ -45,19 +45,19 @@
 
 # 4. Write a program to print the Fibonacci series up to n terms.
 
-n = int(input("Enter number of terms: "))
+# n = int(input("Enter number of terms: "))
 
-a = 0
-b = 1
+# a = 0
+# b = 1
 
-for i in range(n):
-    print(a, end=" ")
+# for i in range(n):
+#     print(a, end=" ")
 
-    c = a + b
-    a = b
-    b = c
+#     c = a + b
+#     a = b
+#     b = c
 
-print()
+# print()
 
 
 # 5. Write a program to find the factorial of a number using a loop.
