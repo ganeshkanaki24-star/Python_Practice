@@ -133,20 +133,20 @@
 
 # 10. Write a program to find the largest and smallest element in a list without using max() or min().
 
-numbers = [10, 50, 20, 5, 40, 30]
+# numbers = [10, 50, 20, 5, 40, 30]
 
-largest = numbers[0]
-smallest = numbers[0]
+# largest = numbers[0]
+# smallest = numbers[0]
 
-for num in numbers:
-    if num > largest:
-        largest = num
+# for num in numbers:
+#     if num > largest:
+#         largest = num
 
-    if num < smallest:
-        smallest = num
+#     if num < smallest:
+#         smallest = num
 
-print("Largest:", largest)
-print("Smallest:", smallest)
+# print("Largest:", largest)
+# print("Smallest:", smallest)
 
 
 # 11. Write a program to remove duplicate elements from a list.
