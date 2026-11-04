@@ -25,22 +25,22 @@
 
 # 3. Write a program to check whether a given number is prime.
 
-num = int(input("Enter a number: "))
+# num = int(input("Enter a number: "))
 
-if num <= 1:
-    print("Not a Prime Number")
-else:
-    prime = True
+# if num <= 1:
+#     print("Not a Prime Number")
+# else:
+#     prime = True
 
-    for i in range(2, num):
-        if num % i == 0:
-            prime = False
-            break
+#     for i in range(2, num):
+#         if num % i == 0:
+#             prime = False
+#             break
 
-    if prime:
-        print("Prime Number")
-    else:
-        print("Not a Prime Number")
+#     if prime:
+#         print("Prime Number")
+#     else:
+#         print("Not a Prime Number")
 
 
 # 4. Write a program to print the Fibonacci series up to n terms.
