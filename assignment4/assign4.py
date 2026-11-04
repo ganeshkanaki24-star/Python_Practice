@@ -121,14 +121,14 @@
 
 # 9. Write a program to find the sum of all elements in a list.
 
-numbers = [10, 20, 30, 40, 50]
+# numbers = [10, 20, 30, 40, 50]
 
-total = 0
+# total = 0
 
-for num in numbers:
-    total += num
+# for num in numbers:
+#     total += num
 
-print("Sum of list:", total)
+# print("Sum of list:", total)
 
 
 # 10. Write a program to find the largest and smallest element in a list without using max() or min().
