@@ -151,30 +151,30 @@
 
 # 11. Write a program to remove duplicate elements from a list.
 
-numbers = [10, 20, 10, 30, 20, 40, 50]
+# numbers = [10, 20, 10, 30, 20, 40, 50]
 
-result = []
+# result = []
 
-for num in numbers:
-    if num not in result:
-        result.append(num)
+# for num in numbers:
+#     if num not in result:
+#         result.append(num)
 
-print("List without duplicates:", result)
+# print("List without duplicates:", result)
 
 
 # 12. Write a program to count how many times each element appears in a list using a dictionary.
 
-numbers = [10, 20, 10, 30, 20, 10, 40]
+# numbers = [10, 20, 10, 30, 20, 10, 40]
 
-frequency = {}
+# frequency = {}
 
-for num in numbers:
-    if num in frequency:
-        frequency[num] += 1
-    else:
-        frequency[num] = 1
+# for num in numbers:
+#     if num in frequency:
+#         frequency[num] += 1
+#     else:
+#         frequency[num] = 1
 
-print("Element Frequency:", frequency)
+# print("Element Frequency:", frequency)
 
 
 # 13. Write a program to find the second-largest number in a list.
