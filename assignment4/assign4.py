@@ -245,16 +245,16 @@
 
 # 17. Write a program to check whether two strings are anagrams of each other.
 
-str1 = input("Enter first string: ")
-str2 = input("Enter second string: ")
+# str1 = input("Enter first string: ")
+# str2 = input("Enter second string: ")
 
-str1 = str1.replace(" ", "").lower()
-str2 = str2.replace(" ", "").lower()
+# str1 = str1.replace(" ", "").lower()
+# str2 = str2.replace(" ", "").lower()
 
-if sorted(str1) == sorted(str2):
-    print("Anagrams")
-else:
-    print("Not Anagrams")
+# if sorted(str1) == sorted(str2):
+#     print("Anagrams")
+# else:
+#     print("Not Anagrams")
 
 
 # 18. Write a program to find all duplicate values in a list.
