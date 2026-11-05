@@ -1,5 +1,13 @@
 # 40. Find the lowest common ancestor of two nodes in a binary tree.
 
+class TreeNode:
+
+    def __init__(self, value):
+        self.val = value
+        self.left = None
+        self.right = None
+
+
 def lowest_common_ancestor(root, p, q):
 
     if root is None:
